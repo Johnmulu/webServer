@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #00477e;
+  --white-color: #fff;
+}
+
+/*General utility*/
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  color: #202020;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #202020;
+}
+
+h1,h2{
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p{
+  margin: 10px 0;
+}
+img {
+  width: 100%;
+}
+
+/*Navbar*/
+
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  height: 70px;
+}
+
+.navbar a{
+color: var(--white-color);
+padding: 10px;
+margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px var(--white-color) solid;
+}
+
+/*Showcase*/
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: relative;
+}
+.showcase h1{
+  font-size: 30px;
+}
+
+.showcase p{
+  margin: 20px 0;
+}
+
+.showcase .grids {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+}
+
+.showcase-form{
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width:450px;
+  padding: 40px;
+  justify-self: flex-end;
+  z-index: 100;
+}
+
+.showcase .form-control{
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],.showcase-form input[type='email']{
+  border: 0;
+  border-bottom: 1 px var(--primary-color) solid;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus{
+  outline: none;
+}
+.showcase::after{
+  content:'';
+  position: absolute;
+  height: 100px;
+  bottom: -60px;
+  right: 0;
+  left:0;
+  background: var(--white-color);
+  transform: skewY(-3deg);
+}
+
+/*General layout*/
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.ul-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline{
+  background-color: transparent;
+  border: 1px var(--white-color) solid;
+}
+.btn:hover{
+  transform: scale(0.98);
+}
+.card{
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 10px;
+  color: #202020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
